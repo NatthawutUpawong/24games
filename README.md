@@ -12,6 +12,6 @@ POST /api/signout (Logout)
 POST /api/addanswers (Create answer)
 GET  /api/answers?number=เลขสี่ตัวที่ต้องการหาคำตอบ
 PATCH /api/edtanswers/id (Edit by id)
-
+DELETE /api/deleteanswers/id (Delete by id)
 ```
 open http://localhost:3000
