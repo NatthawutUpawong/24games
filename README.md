@@ -40,4 +40,31 @@ POST /api/signin (Login User)
   "password": "11111111"
 }
 ```
+
+```
+POST /api/addanswers (Create answer)
+```
+
+```json
+{
+  "number": "12312312",
+  "answers": [
+    "(1+2)*(3+4)",
+  ]
+}
+```
+
+```
+PATCH /api/edtanswers/ (Edit answer)
+```
+
+```json
+{
+  "number": "4321",
+  "answers": [
+    "(1+2)*(3+4)"
+  ]
+}
+```
+
 open http://localhost:3000
