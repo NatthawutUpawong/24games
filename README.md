@@ -14,4 +14,30 @@ GET  /api/answers?number=เลขสี่ตัวที่ต้องกา�
 PATCH /api/edtanswers/id (Edit by id)
 DELETE /api/deleteanswers/id (Delete by id)
 ```
+
+
+### Usage
+
+```
+POST /api/signup (Create User)
+```
+
+```json
+{
+  "username": "chain1",
+  "password": "11111111"
+}
+
+```
+
+```
+POST /api/signin (Login User)
+```
+
+```json
+{
+  "username": "chain1",
+  "password": "11111111"
+}
+```
 open http://localhost:3000
