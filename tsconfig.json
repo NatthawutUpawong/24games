@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                        // ระบุเวอร์ชันของ JavaScript ที่จะแปลงเป็น
+    "module": "commonjs",                   // โมดูลระบบที่ใช้ (เช่น CommonJS)
+    "strict": true,                         // เปิดการตรวจสอบ TypeScript ที่เข้มงวด
+    "esModuleInterop": true,                // รองรับการ import/export ของ ES Module
+    "skipLibCheck": true,                   // ข้ามการตรวจสอบไลบรารี TypeScript
+    "forceConsistentCasingInFileNames": true, // บังคับให้ใช้ชื่อไฟล์ตัวพิมพ์เดียวกันทั้งหมด
+    "outDir": "./dist"                      // โฟลเดอร์ที่ใช้เก็บไฟล์ที่คอมไพล์แล้ว
+  },
+  "include": ["src/**/*"],                  // โฟลเดอร์ที่ต้องการให้คอมไพล์
+  "exclude": ["node_modules"]               // โฟลเดอร์ที่ไม่ต้องการให้คอมไพล์
+}
