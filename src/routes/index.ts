@@ -57,10 +57,17 @@ router.patch('/edtanswers/:id', async (c) => {
   try {
     const id = c.req.param('id');
     const updates = await c.req.json();
+    const numberUpdated = updates.number;
+    if (numberUpdated) {
+      const numbersArray = numberUpdated.split('').map(Number).sort();
+      const sortedNumberString = numbersArray.join('');
+      updates.number = sortedNumberString; 
+    }
+
     const updatedAnswer = await updateAnswer(id, updates);
     return c.json(updatedAnswer);
   } catch (err) {
-    console.error('Error in /answers/:id route:', err);
+    console.error('Error in /edtanswers/:id route:', err);
     return c.json({ message: 'Error updating answer' }, 500);
   }
 });
