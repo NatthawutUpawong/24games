@@ -1,4 +1,6 @@
 ### my learning
+TypeScript, Hono
+
 To run:
 ```sh
 bun run dev
