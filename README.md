@@ -50,7 +50,7 @@ POST /api/addanswers (Create answer)
 
 ```json
 {
-  "number": "12312312",
+  "number": "1234",
   "answers": [
     "(1+2)*(3+4)",
   ]
